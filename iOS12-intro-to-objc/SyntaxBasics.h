@@ -14,4 +14,9 @@
 @property NSNumber *largeNumber;
 
 - (instancetype) initWithLargeNumber: (NSNumber *) largeNumber;
+- (void) explorePrimitives;
+- (void) exploreObjects;
+- (void) exploreCollectionsWithArray: (NSArray *) shipCaptains;
+- (void) exploreNumbers;
+
 @end
