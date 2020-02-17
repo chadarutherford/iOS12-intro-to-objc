@@ -20,6 +20,11 @@ int main(int argc, const char * argv[]) {
         SyntaxBasics * basics = [[SyntaxBasics alloc] initWithLargeNumber:@9223372036];
         
         [basics explorePrimitives];
+        [basics exploreObjects];
+        
+        [basics exploreCollectionsWithArray:@[@"Malcolm Reynolds",
+                                              @"Jean-Luc Picard",
+                                              @"Kathryn Janeway"]];
     }
     return 0;
 }

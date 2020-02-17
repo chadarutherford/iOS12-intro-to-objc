@@ -71,7 +71,24 @@
 }
 
 - (void) exploreObjects {
-    
+    //
+    // Objects (class-based types)
+    //
+    NSLog(@"---------------Objects---------------");
+    // NSString
+    NSString *lambda = @"Go all in!";
+    NSLog(@"%@", lambda);
+    // String concatenation/interpolation
+    NSString *label = @"The length is";
+    int length = 94;
+    NSString *lengthString = [NSString stringWithFormat:@"%@ %d", label, length];
+    NSLog(@"%@", lengthString);
+    // id type used to store an object of any type
+    id mysteryObject = @"An NSString Object";
+    NSLog(@"%@", [mysteryObject description]);
+    mysteryObject = @[@"Apple", @"Microsoft"];
+    NSLog(@"%@", [mysteryObject description]);
+    NSLog(@"---------------End Objects---------------");
 }
 
 - (void) exploreCollectionsWithArray:(NSArray *)shipCaptains {
